@@ -2,17 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/APP_CFG_Layer/user_cfg/user_cfg.c</file>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/APP_CFG_Layer/mode_cfg/mode_cfg.h</file>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/ECU_Layer/ecu_lcd/ecu_lcd.c</file>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/application.c</file>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/APP_CFG_Layer/display_cfg/display_cfg.h</file>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/APP_CFG_Layer/hardware_cfg/hardware_cfg.h</file>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/APP_CFG_Layer/display_cfg/display_cfg.c</file>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/APP_CFG_Layer/hardware_cfg/hardware_cfg.c</file>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/APP_CFG_Layer/user_cfg/user_cfg.h</file>
-            <file>file:/D:/studying/Microcontroller_Interfacing/Projects_for_learning/Simple_login/APP_CFG_Layer/mode_cfg/mode_cfg.c</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

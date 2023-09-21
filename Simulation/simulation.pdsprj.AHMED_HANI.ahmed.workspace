@@ -20,7 +20,7 @@
      <ITEM name="Address Column Width">83</ITEM>
      <ITEM name="AutoResize">No</ITEM>
      <ITEM name="Gridlines">Yes</ITEM>
-     <ITEM name="Item 0">"*user_remove@Password","0x0EC2",00000001,00000004,3778,1,6,00000000,0,00000000,00000000</ITEM>
+     <ITEM name="Item 0">"*password","0x0F41",00000001,00000004,3905,1,6,00000000,0,00000000,00000000</ITEM>
      <ITEM name="Item 1">"*strcmp@l","0x0F44",00000001,00000004,3908,1,6,00000000,0,00000000,00000000</ITEM>
      <ITEM name="Item 2">"*user_admin_confirm@Password","0x0ED7",00000001,00000004,3799,1,6,00000000,0,00000000,00000000</ITEM>
      <ITEM name="Item 3">"0x0ed2","0x0ed2",00000001,00000004,3794,1,6,00000000,0,00000000,00000000</ITEM>
@@ -33,30 +33,30 @@
      <ITEM name="Value Column Width">121</ITEM>
      <ITEM name="Version">100</ITEM>
      <ITEM name="Watch Expression Column Width">83</ITEM>
-     <ITEM name="nItems">3</ITEM>
+     <ITEM name="nItems">1</ITEM>
     </PROPERTIES>
    </POPUP>
    <POPUP w="380" x="78" flags="00000008" y="169" h="171" pid="3" iid="1">
     <PROPERTIES/>
    </POPUP>
-   <POPUP w="16" x="98" flags="0000000a" y="189" h="32" pid="7" iid="1">
+   <POPUP w="44" x="98" flags="0000000a" y="189" h="63" pid="7" iid="1">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
      <ITEM name="DispFormat">2</ITEM>
      <ITEM name="ShowChanges">Yes</ITEM>
      <ITEM name="ShowToolTips">Yes</ITEM>
-     <ITEM name="TopLineAddress">00000000</ITEM>
+     <ITEM name="TopLineAddress">0000A94C</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="8" x="118" flags="0000000a" y="209" h="32" pid="4" iid="1">
+   <POPUP w="32" x="118" flags="0000000a" y="209" h="55" pid="4" iid="1">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
      <ITEM name="DispFormat">2</ITEM>
      <ITEM name="ShowChanges">Yes</ITEM>
      <ITEM name="ShowToolTips">Yes</ITEM>
-     <ITEM name="TopLineAddress">00000000</ITEM>
+     <ITEM name="TopLineAddress">00000920</ITEM>
     </PROPERTIES>
    </POPUP>
    <POPUP w="8" x="138" flags="00000002" y="229" h="16" pid="12" iid="1">
@@ -69,7 +69,7 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="8" x="158" flags="0000000a" y="249" h="32" pid="6" iid="1">
+   <POPUP w="28" x="158" flags="0000000a" y="249" h="61" pid="6" iid="1">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
@@ -112,7 +112,7 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="1001" x="0" flags="0000802b" y="56" h="596" pid="1" iid="1">
+   <POPUP w="1001" x="0" flags="0000002b" y="56" h="596" pid="1" iid="1">
     <PROPERTIES>
      <ITEM name="Breakpoint 0">"",F6EE,0000,7CF2,173C,1
 </ITEM>
@@ -127,7 +127,7 @@
      <ITEM name="nBreakpoints">0</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="765" x="725" flags="0000000b" y="365" h="667" pid="2" iid="1">
+   <POPUP w="765" x="725" flags="0000000a" y="365" h="667" pid="2" iid="1">
     <PROPERTIES>
      <ITEM name="Address Column Width">163</ITEM>
      <ITEM name="AutoResize">No</ITEM>
