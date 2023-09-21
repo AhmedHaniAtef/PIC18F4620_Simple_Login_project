@@ -10,10 +10,10 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 3h		(dist/default/debug\Simple_login.debug.hex)
-  A9C5h - FFFFh		(dist/default/debug\Simple_login.debug.hex)
+  A989h - FFFFh		(dist/default/debug\Simple_login.debug.hex)
   300000h - 30000Dh		(dist/default/debug\Simple_login.debug.hex)
  Unused ranges:
-  4h - A9C4h
+  4h - A988h
   10000h - 2FFFFFh
 
 ### Hex Memory Map ###
@@ -25,7 +25,11 @@
 ----------------------------------------------------------
 00000000 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
-0000A9C0 | -- -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+0000A980 | -- -- -- -- -- -- -- -- -- H1 H1 H1 H1 H1 H1 H1
+0000A990 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+0000A9A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+0000A9B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+0000A9C0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 0000A9D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 0000A9E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 0000A9F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

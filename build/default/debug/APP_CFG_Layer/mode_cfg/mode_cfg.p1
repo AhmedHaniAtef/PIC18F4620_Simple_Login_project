@@ -1748,115 +1748,121 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 366 ]
 }
 "385
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 385:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 1, (uint8_t *)users->username);
-[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 1 `i `uc &U . *U _users 0 `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 385:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 1, (uint8_t *)"               ");
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 1 `i `uc -> :s 22C `*uc `uc ]
 "386
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 386:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 5, (uint8_t *)"|");
-[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 5 `i `uc -> :s 22C `*uc `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 386:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 1, (uint8_t *)users->username);
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 1 `i `uc &U . *U _users 0 `uc ]
 "387
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 387:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 6, (uint8_t *)users->level);
-[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 6 `i `uc . *U _users 3 `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 387:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 5, (uint8_t *)"|");
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 5 `i `uc -> :s 24C `*uc `uc ]
 "388
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 388:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 11, (uint8_t *)"|");
-[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 11 `i `uc -> :s 24C `*uc `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 388:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 6, (uint8_t *)users->level);
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 6 `i `uc . *U _users 3 `uc ]
 "389
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 389:             ret |= convert_uint8_to_string(turned_on_leds, str);
-[e =| _ret -> ( _convert_uint8_to_string (2 , _turned_on_leds &U _str `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 389:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 11, (uint8_t *)"|");
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 11 `i `uc -> :s 26C `*uc `uc ]
 "390
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 390:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 12, (uint8_t *)str);
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 390:             ret |= convert_uint8_to_string(turned_on_leds, str);
+[e =| _ret -> ( _convert_uint8_to_string (2 , _turned_on_leds &U _str `uc ]
+"391
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 391:             ret |= lcd_4bit_send_string_pos(__lcd, 1, 12, (uint8_t *)str);
 [e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 1 `i `uc -> -> 12 `i `uc &U _str `uc ]
-"392
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 392:             user_next_counter = users->next_user;
+"393
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 393:             user_next_counter = users->next_user;
 [e = _user_next_counter . *U _users 4 ]
-"394
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 394:             turned_on_leds = 0;
-[e = _turned_on_leds -> -> 0 `i `uc ]
 "395
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 395:             for (led_on_counter = 0; led_on_counter < 4; led_on_counter++)
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 395:             turned_on_leds = 0;
+[e = _turned_on_leds -> -> 0 `i `uc ]
+"396
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 396:             for (led_on_counter = 0; led_on_counter < 4; led_on_counter++)
 {
 [e = _led_on_counter -> -> 0 `i `uc ]
 [e $ < -> _led_on_counter `i -> 4 `i 369  ]
 [e $U 370  ]
 [e :U 369 ]
-"396
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 396:             {
-{
 "397
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 397:                 if ((user_next_counter->output_leds[led_on_counter]) == 1)
-[e $ ! == -> *U + &U . *U _user_next_counter 1 * -> _led_on_counter `ux -> -> # *U &U . *U _user_next_counter 1 `ui `ux `ui -> -> 1 `i `ui 372  ]
-"398
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 398:                 {
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 397:             {
 {
+"398
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 398:                 if ((user_next_counter->output_leds[led_on_counter]) == 1)
+[e $ ! == -> *U + &U . *U _user_next_counter 1 * -> _led_on_counter `ux -> -> # *U &U . *U _user_next_counter 1 `ui `ux `ui -> -> 1 `i `ui 372  ]
 "399
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 399:                     turned_on_leds++;
-[e ++ _turned_on_leds -> -> 1 `i `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 399:                 {
+{
 "400
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 400:                 }
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 400:                     turned_on_leds++;
+[e ++ _turned_on_leds -> -> 1 `i `uc ]
+"401
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 401:                 }
 }
 [e :U 372 ]
-"401
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 401:             }
+"402
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 402:             }
 }
 [e ++ _led_on_counter -> -> 1 `i `uc ]
 [e $ < -> _led_on_counter `i -> 4 `i 369  ]
 [e :U 370 ]
 }
-"402
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 402:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 1, (uint8_t *)user_next_counter->username);
-[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 1 `i `uc &U . *U _user_next_counter 0 `uc ]
 "403
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 403:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 5, (uint8_t *)"|");
-[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 5 `i `uc -> :s 26C `*uc `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 403:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 1, (uint8_t *)"               ");
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 1 `i `uc -> :s 28C `*uc `uc ]
 "404
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 404:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 6, (uint8_t *)user_next_counter->level);
-[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 6 `i `uc . *U _user_next_counter 3 `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 404:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 1, (uint8_t *)user_next_counter->username);
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 1 `i `uc &U . *U _user_next_counter 0 `uc ]
 "405
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 405:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 11, (uint8_t *)"|");
-[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 11 `i `uc -> :s 28C `*uc `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 405:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 5, (uint8_t *)"|");
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 5 `i `uc -> :s 30C `*uc `uc ]
 "406
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 406:             ret |= convert_uint8_to_string(turned_on_leds, str);
-[e =| _ret -> ( _convert_uint8_to_string (2 , _turned_on_leds &U _str `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 406:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 6, (uint8_t *)user_next_counter->level);
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 6 `i `uc . *U _user_next_counter 3 `uc ]
 "407
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 407:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 12, (uint8_t *)str);
-[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 12 `i `uc &U _str `uc ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 407:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 11, (uint8_t *)"|");
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 11 `i `uc -> :s 32C `*uc `uc ]
+"408
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 408:             ret |= convert_uint8_to_string(turned_on_leds, str);
+[e =| _ret -> ( _convert_uint8_to_string (2 , _turned_on_leds &U _str `uc ]
 "409
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 409:             users = user_next_counter;
-[e = _users _user_next_counter ]
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 409:             ret |= lcd_4bit_send_string_pos(__lcd, 2, 12, (uint8_t *)str);
+[e =| _ret -> ( _lcd_4bit_send_string_pos (4 , , , ___lcd -> -> 2 `i `uc -> -> 12 `i `uc &U _str `uc ]
 "411
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 411:             _delay((unsigned long)((2000)*(8000000/4000.0)));
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 411:             users = user_next_counter;
+[e = _users _user_next_counter ]
+"413
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 413:             _delay((unsigned long)((2000)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"412
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 412:         }
+"414
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 414:         }
 }
 [e :U 362 ]
 "375
 [; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 375:         while (user_next_counter->next_user != ((void*)0))
 [e $ != . *U _user_next_counter 4 -> -> -> 0 `i `*v `*S285 363  ]
 [e :U 364 ]
-"413
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 413:     }
+"415
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 415:     }
 }
 [e :U 357 ]
-"414
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 414:     return ret;
+"416
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 416:     return ret;
 [e ) _ret ]
 [e $UE 355  ]
-"415
-[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 415: }
+"417
+[; ;APP_CFG_Layer/mode_cfg/mode_cfg.c: 417: }
 [e :UE 355 ]
 }
 [a 15C 124 0 ]
 [a 16C 124 0 ]
 [a 17C 124 0 ]
 [a 18C 124 0 ]
-[a 21C 124 0 ]
-[a 22C 124 0 ]
 [a 23C 124 0 ]
 [a 24C 124 0 ]
 [a 25C 124 0 ]
 [a 26C 124 0 ]
-[a 27C 124 0 ]
-[a 28C 124 0 ]
+[a 29C 124 0 ]
+[a 30C 124 0 ]
+[a 31C 124 0 ]
+[a 32C 124 0 ]
 [a 13C 85 115 101 114 124 108 101 118 101 108 124 108 101 100 115 0 ]
 [a 14C 85 115 101 114 124 108 101 118 101 108 124 108 101 100 115 0 ]
 [a 1C 69 110 116 101 114 32 111 112 116 105 111 110 0 ]
@@ -1873,3 +1879,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 12C 50 0 ]
 [a 19C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
 [a 20C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 21C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 22C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 27C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 28C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]

@@ -5891,6 +5891,7 @@ static std_returntype display_all_users(lcd_4bit_t *__lcd, user_t *users)
                     turned_on_leds++;
                 }
             }
+            ret |= lcd_4bit_send_string_pos(__lcd, 1, 1, (uint8_t *)"               ");
             ret |= lcd_4bit_send_string_pos(__lcd, 1, 1, (uint8_t *)users->username);
             ret |= lcd_4bit_send_string_pos(__lcd, 1, 5, (uint8_t *)"|");
             ret |= lcd_4bit_send_string_pos(__lcd, 1, 6, (uint8_t *)users->level);
@@ -5908,6 +5909,7 @@ static std_returntype display_all_users(lcd_4bit_t *__lcd, user_t *users)
                     turned_on_leds++;
                 }
             }
+            ret |= lcd_4bit_send_string_pos(__lcd, 2, 1, (uint8_t *)"               ");
             ret |= lcd_4bit_send_string_pos(__lcd, 2, 1, (uint8_t *)user_next_counter->username);
             ret |= lcd_4bit_send_string_pos(__lcd, 2, 5, (uint8_t *)"|");
             ret |= lcd_4bit_send_string_pos(__lcd, 2, 6, (uint8_t *)user_next_counter->level);
