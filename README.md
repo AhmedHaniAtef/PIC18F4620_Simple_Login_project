@@ -1,4 +1,5 @@
-# PIC18F4620_Simple_Login_project ## Main Idea Of Project
+# PIC18F4620_Simple_Login_project 
+## Main Idea Of Project
 This project uses linked list data structure to handle the dealing with users so that it becomes easy to add, remove and store the data and level of each one. Each user has a username, password and a level of accessbility, depending on the level the user has a maximum number of leds which can turn on at same time. Using GPIO module of PIC18F4628 microcontroller is needed to show the output of each mode in the program on LCD and needed also to get inputs through a push button and keypad then depends on the inputs a specific led is turned on or a buzzer will gives an alarm for few seconds.
 ### How To Use The Device
 After turning on the device, it will gives a welcome message and follows it with a loading screen.
