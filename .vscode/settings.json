@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "hardware_cfg.h": "c",
+        "user_cfg.h": "c",
+        "display_cfg.h": "c",
+        "application.h": "c",
+        "type_traits": "c"
+    }
+}
